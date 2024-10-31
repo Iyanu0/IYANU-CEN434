@@ -1,0 +1,12 @@
+h1{
+    font-family:Jolly Lodger;
+}
+p{
+    font-weight: 600;
+    font-family: Lexend Deca;
+}
+.form-section{
+    border-color: black;
+    position: relative;
+    left: 20%;
+}
