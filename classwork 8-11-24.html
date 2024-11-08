@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.js">
+</head>
+<script type="text/javascript">
+    function average (arr){
+let sum = 0;
+for (let i =0; i< arr.length; i++) {
+    sum +=arr[i];
+
+}
+const avg = sum/arr.length;
+return avg;
+}
+
+const arr1=[1,2,3,4,5,6,7,8,9,10];
+q1_answer=average(arr1);
+
+
+function fact(num){
+    let result=1;
+    if (num===0 || num===1){
+        result=1;
+    }
+    else{
+        for(let i=2;i<=num;i++){
+            result*=i;
+        }
+    }
+    return result;
+}
+
+function combination(x,y){
+    if(y > x){
+        result=fact(y) / (fact(y-x)*fact(x));
+    }
+    if (x==y){
+        x=x-1;
+        result=fact(y)/(fact(y-x)*fact(x));
+    }
+    if (x > y){
+        result=fact(x)/(fact(x-y)*fact(y))
+    }
+    return result;
+}
+const num1=3;
+const num2=3;
+const q2_answer=combination(num1,num2);
+
+function factorialLastTwoDigits(n) {
+    let factorial = 1;
+
+    for (let i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    return factorial % 100;
+}
+
+const number = 23;
+const q3_answer = factorialLastTwoDigits(number);
+
+
+
+
+
+</script>
+<body>
+    <h1>OKUNNUGA IYANUOLUWA 21CK029423 CEN</h1>
+    <div>
+        <h2>QUESTION 1</h2>
+        <p>Write the the average of the numbers in the array A=[1,2,3,4,5,6,7,8,9,10] </p>
+        <p>Answer: The average of the numbers in the array A = <script>document.write(q1_answer)</script></p>
+    </div>
+    <div>
+        <h2>QUESTION 2</h2>
+        <p>Write the the combination of the last 2 digits of your matric no.</p>
+        <p>Answer: The combination is= <script>document.write(q2_answer)</script></p>
+    </div>
+    <div>
+        <h2>QUESTION 3</h2>
+        <p>Show the last 2 digits of the factorial of the last 2 digits of your matric no.</p>
+        <p>Answer: The factorial is= <script>document.write(q3_answer)</script></p>
+    </div>
+    
+
+    <h2></h2>
+</body>
+</html>
